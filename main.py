@@ -183,7 +183,7 @@ def main():
         # Create converter
         converter = TranscriptionDataConverter(transcription, video_title)
         
-        # Convert based on selected format
+        
         format_key = conversion_formats[selected_format]
         
         if format_key in ["raw", "qa", "instruction"]:
@@ -199,11 +199,11 @@ def main():
             file_extension = "parquet"
             mime_type = "application/parquet"
         
-        # Display converted data
+        
         st.subheader("Converted Data Preview")
         st.code(converted_data[:1000] + "..." if len(converted_data) > 1000 else converted_data)
         
-        # Download button
+
         st.download_button(
             label=f"Download {selected_format}",
             data=converted_data,
