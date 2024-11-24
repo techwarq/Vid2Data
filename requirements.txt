@@ -1,8 +1,12 @@
 streamlit==1.35.0
-yt-dlp==2024.11.18
-openai-whisper==20240930
+yt-dlp==2024.3.10
+openai-whisper==20231117
 spacy==3.7.5
 pandas==2.0.2
 numpy==1.26.4
 pyarrow==17.0.0
 ffmpeg-python==0.2.0
+python-dotenv==1.0.1
+langchain==0.2.14
+langchain-community==0.2.12
+langchain-groq===0.1.9
